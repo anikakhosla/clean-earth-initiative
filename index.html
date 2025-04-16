@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clean Earth Initiative - Plastic Pollution</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #e0f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #004d40;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #00695c;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .important {
+      background-color: #fff9c4;
+      padding: 15px;
+      border-left: 5px solid #fbc02d;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Clean Earth Initiative</h1>
+    <p>A School Project by 8th Graders to Fight Plastic Pollution</p>
+  </header>
+
+  <nav>
+    <a href="#what">What is Plastic Pollution?</a>
+    <a href="#problems">Why is it a Problem?</a>
+    <a href="#solutions">What Can We Do?</a>
+    <a href="#help">How Can Students Help?</a>
+  </nav>
+
+  <section id="what">
+    <h2>What is Plastic Pollution?</h2>
+    <p>
+      Plastic pollution is when plastic waste ends up in nature — in oceans, rivers, parks, and streets. 
+      Since plastic takes hundreds of years to break down, it keeps building up and harming animals, people, and the planet.
+    </p>
+    <div class="important">
+      🌍 Did you know? Over <b>8 million tons</b> of plastic end up in the oceans every year!
+    </div>
+  </section>
+
+  <section id="problems">
+    <h2>Why is Plastic a Problem?</h2>
+    <p>
+      Plastic pollution causes a lot of harm. Animals like turtles and birds eat plastic by mistake, thinking it’s food. 
+      This can make them very sick or even kill them. Plastic can also block drains and cause flooding. 
+      And tiny plastic pieces called <b>microplastics</b> are even found in our food and water!
+    </p>
+  </section>
+
+  <section id="solutions">
+    <h2>What Can We Do?</h2>
+    <p>
+      There are many smart ways to reduce plastic pollution. Here are some:
+    </p>
+    <ul>
+      <li>Use reusable water bottles and bags 👜</li>
+      <li>Avoid plastic straws and cutlery 🥤</li>
+      <li>Recycle properly ♻️</li>
+      <li>Join or organize clean-up events 🌿</li>
+    </ul>
+  </section>
+
+  <section id="help">
+    <h2>How Can Students Help?</h2>
+    <p>
+      Students like us can make a big difference! Here’s how:
+    </p>
+    <ul>
+      <li>Start a recycling club at school 🏫</li>
+      <li>Make posters to spread awareness 🎨</li>
+      <li>Give presentations in class or assemblies 📢</li>
+      <li>Write to local leaders to ask for better recycling bins 📝</li>
+    </ul>
+    <div class="important">
+      💡 Remember: Every small action helps make the Earth cleaner and happier!
+    </div>
+  </section>
+
+  <section id="fun-fact-section">
+    <h2>🎉 Fun Fact Generator 🎉</h2>
+    <p>Click the button to learn a cool fact about plastic pollution!</p>
+    <button onclick="showFact()">Show Me a Fact!</button>
+    <div id="fact-display">🤔 Ready to learn something cool?</div>
+
+    <div style="text-align: center; margin: 40px;">
+        <a href="our-project.html">
+          <button style="background-color: #558b2f; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 8px; cursor: pointer;">
+            Learn About Our Project
+          </button>
+        </a>
+      </div>
+      
+ 
+  </section>
+  <footer>
+    <p>Made with 💚 by 8th Grade Students | Clean Earth Initiative © 2025</p>
+  </footer>
+  <script>
+    const facts = [
+      "Plastic can take up to 1000 years to decompose in landfills!",
+      "One million plastic bottles are bought every minute around the world!",
+      "Over 700 marine species are affected by plastic pollution.",
+      "Microplastics have been found in rain, snow, and even in the air we breathe!",
+      "Only 9% of all plastic waste ever made has been recycled.",
+      "By 2050, there could be more plastic in the ocean than fish (by weight).",
+      "Straws are one of the top 10 items found during beach cleanups!",
+      "Some plastics release toxic chemicals as they break down.",
+      "Plastic bags can kill sea turtles that mistake them for jellyfish.",
+      "Every person uses about 200 plastic bags per year on average.",
+      "Recycling one plastic bottle saves enough energy to power a lightbulb for 3 hours!",
+      "The Great Pacific Garbage Patch is larger than the size of Texas.",
+      "Plastic was invented in 1907 and it's still here today!",
+      "More than 40% of plastic is used just once and then thrown away.",
+      "Plastic pollution has been found in the deepest parts of the ocean."
+    ];
+
+    function showFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById('fact-display').textContent = "💡 " + facts[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
